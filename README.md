@@ -19,6 +19,8 @@ The parameters are just accepted as a dictionary.
 Note from the documentation quotations are required for some filters.
 I've mapped both " and ' to be the desired urlencoding to make it more python-esque
 
+Example:
+
     from bing_search_api import BingSearchAPI 
     
     my_key = "[your key]"
@@ -27,4 +29,4 @@ I've mapped both " and ' to be the desired urlencoding to make it more python-es
               '$format': 'json',
               '$top': 10,
               '$skip': 0}
-    print bing.search('image+web','Your Name',params)
+    print bing.search('image+web','Your Query',params)
