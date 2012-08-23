@@ -3,8 +3,8 @@ pyBingSearchAPI
 
 Python Bing Search API for new Azure Marketplace version (Aug 2012 release)
 
-Inspired by https://github.com/mlagace/Python-SimpleBing (designed for outdated Bing API 2.0)
-This class basically encodes your query parameters as a url request 
+Inspired by https://github.com/mlagace/Python-SimpleBing (designed for outdated Bing API 2.0),
+this class basically encodes your query parameters as a url request 
 but also makes sure the parameters are in the right order, 
 case is correct for the mandatory parameters, and quotes are added.
 Details are in the source comments.
@@ -19,7 +19,9 @@ The parameters are just accepted as a dictionary.
 Note from the documentation quotations are required for some filters.
 I've mapped both " and ' to be the desired urlencoding to make it more python-esque
 
-    my_key = [your key]
+    from bing_search_api import BingSearchAPI 
+    
+    my_key = "[your key]"
     bing = BingSearchAPI(my_key)
     params = {'ImageFilters':'"Face:Face"',
               '$format': 'json',
