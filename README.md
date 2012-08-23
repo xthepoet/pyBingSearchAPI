@@ -13,7 +13,7 @@ To use:
 Get your API key from http://www.bing.com/developers/
 
 For the Bing Search API schema, go to http://www.bing.com/developers/
-Click on Bing Search API. Then download the Bing API Schema Guide (which is oddly a Word document)
+Click on Bing Search API, then download the Bing API Schema Guide (which is oddly a Word document)
 
 The parameters are just accepted as a dictionary. 
 Note from the documentation quotations are required for some filters.
