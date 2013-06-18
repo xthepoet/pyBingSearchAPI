@@ -24,9 +24,10 @@ Example:
     from bing_search_api import BingSearchAPI 
     
     my_key = "[your key]"
+    query_string = "Your Query"
     bing = BingSearchAPI(my_key)
     params = {'ImageFilters':'"Face:Face"',
               '$format': 'json',
               '$top': 10,
               '$skip': 0}
-    print bing.search('image+web','Your Query',params)
+    print bing.search('image+web',query_string,params).json() # requests 1.0+ 
