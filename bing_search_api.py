@@ -41,7 +41,7 @@ class BingSearchAPI():
         for key,value in params.iteritems():
             request += '&' + key + '=' + str(value) 
         request = self.bing_api + self.replace_symbols(request)
-        return requests.get(request, auth=(self.key, self.key)).json()
+        return requests.get(request, auth=(self.key, self.key))
 
 
 if __name__ == "__main__":
@@ -51,4 +51,4 @@ if __name__ == "__main__":
               '$format': 'json',
               '$top': 10,
               '$skip': 0}
-    print bing.search('image+web','Your Name',params)
+    print bing.search('image+web','Your Name',params).json() # requests 1.0+
