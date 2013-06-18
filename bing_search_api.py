@@ -41,7 +41,7 @@ class BingSearchAPI():
         for key,value in params.iteritems():
             request += '&' + key + '=' + str(value) 
         request = self.bing_api + self.replace_symbols(request)
-        return requests.get(request, auth=(self.key, self.key)).json
+        return requests.get(request, auth=(self.key, self.key)).json()
 
 
 if __name__ == "__main__":
