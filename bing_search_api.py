@@ -46,9 +46,10 @@ class BingSearchAPI():
 
 if __name__ == "__main__":
     my_key = "[your key]"
+    query_string = "Brad Pitt"
     bing = BingSearchAPI(my_key)
     params = {'ImageFilters':'"Face:Face"',
               '$format': 'json',
               '$top': 10,
               '$skip': 0}
-    print bing.search('image+web','Your Name',params).json() # requests 1.0+
+    print bing.search('image+web',query_string,params).json() # requests 1.0+
